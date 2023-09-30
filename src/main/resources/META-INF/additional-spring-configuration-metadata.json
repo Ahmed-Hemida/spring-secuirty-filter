@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "spring.security.local.key",
+  "type": "java.lang.String",
+  "description": "this var is use to implement Authention logic "
+}]}
