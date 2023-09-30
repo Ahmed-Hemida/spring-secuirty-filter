@@ -17,7 +17,7 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @Component
-public class FilterImp extends OncePerRequestFilter {
+public class AuthFilterImp extends OncePerRequestFilter {
  private final AuthManagerImp manger; 
     @Override
     protected void doFilterInternal( HttpServletRequest request,
