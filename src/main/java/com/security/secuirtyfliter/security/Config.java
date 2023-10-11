@@ -19,10 +19,10 @@ public class Config {
     @Bean
     public SecurityFilterChain securityFilterChain( HttpSecurity http) throws Exception{
 
-        return http
+         http
         .addFilterAt(authenticationFilterImp, UsernamePasswordAuthenticationFilter.class)
-        .authorizeRequests().anyRequest().authenticated()  // don't worry about this
-        .and().build();
+        .authorizeHttpRequests().anyRequest().authenticated();  // don't worry about this
+        return http.build();
 
     }
 
